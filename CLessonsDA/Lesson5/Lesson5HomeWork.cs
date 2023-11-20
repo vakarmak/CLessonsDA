@@ -62,16 +62,17 @@ namespace CLessonsDA.Lesson5
             Console.WriteLine("Введите число:");
             int number2 = int.Parse(Console.ReadLine());
 
-            // Первый вариант решения
-            if (number2 % 2 == 0)
-            {
-                Console.WriteLine("Число четное");
-            } else
-            {
-                Console.WriteLine("Число не четное");
-            }
+            // Первый вариант решения (простое решение)
+            //if (number2 % 2 == 0)
+            //{
+            //    Console.WriteLine("число четное");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("число не четное");
+            //}
 
-            // Второй вариант решения
+            // Второй вариант решения (побитовая проверка)
             static bool isEvenNumber (int n)
             {
                 return (n > 0) && ((n & (n - 1)) == 0) && ((n & 1) == 0);
