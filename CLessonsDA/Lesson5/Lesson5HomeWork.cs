@@ -99,7 +99,25 @@ namespace CLessonsDA.Lesson5
             // § z = x++ & y * 5; 
             // § x = y << x++ ^ z;
 
+            int x1 = 5, y1 = 10, z1 = 15;
+            int res1 = x1 += y1 >> x1++ * z1;
+            Console.WriteLine(res1);
 
+            int x2 = 5, y2 = 10, z2 = 15;
+            int res2 = z2 = ++x2 & y2 * 5;
+            Console.WriteLine(res2);
+
+            int x3 = 5, y3 = 10, z3 = 15;
+            int res3 = y3 /= x3 + 5 | z3;
+            Console.WriteLine(res3);
+
+            int x4 = 5, y4 = 10, z4 = 15;
+            int res4 = z4 = x4++ & y4 * 5;
+            Console.WriteLine(res4);
+
+            int x5 = 5, y5 = 10, z5 = 15;
+            int res5 = x5 = y5 << x5++ ^ z5;
+            Console.WriteLine(res5);
         }
 
         public static void Task5()
@@ -114,7 +132,34 @@ namespace CLessonsDA.Lesson5
             // Если выслуга от 25 лет(включительно) и более, премия составляет 50 % от заработной платы.  
             // Результаты расчета, выведите на экран. 
 
+            Console.WriteLine("Укажите ваш рабочий стаж:");
+            int workAge = int.Parse(Console.ReadLine());
 
+            if (workAge > 0 && workAge < 5)
+            {
+                Console.WriteLine("Ваша премия составляет 10% от заработной платы");
+            }
+            else if (workAge >= 5 && workAge < 10)
+            {
+                Console.WriteLine("Ваша премия составляет 15% от заработной платы");
+            }
+            else if (workAge >= 10 && workAge < 15)
+            {
+                Console.WriteLine("Ваша премия составляет 25% от заработной платы");
+            }
+            else if (workAge >= 15 && workAge < 20)
+            {
+                Console.WriteLine("Ваша премия составляет 35% от заработной платы");
+            }
+            else if (workAge >= 20 && workAge < 25)
+            {
+                Console.WriteLine("Ваша премия составляет 45% от заработной платы");
+            }
+            else if (workAge > 25)
+            {
+                Console.WriteLine("Ваша премия составляет 50% от заработной платы");
+            }
+            Console.WriteLine("Вы либо не работаете либо пытаетесь проверить программу на работоспособность!");
         }
     }
 }

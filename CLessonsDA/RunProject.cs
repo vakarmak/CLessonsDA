@@ -25,7 +25,7 @@ namespace CLessonsDA
 
             //Lesson5.Lesson5HomeWork.Task1();
             //Lesson5.Lesson5HomeWork.Task2();
-            Lesson5.Lesson5HomeWork.Task3();
+            //Lesson5.Lesson5HomeWork.Task3();
             //Lesson5.Lesson5HomeWork.Task4();
             //Lesson5.Lesson5HomeWork.Task5();
         }
