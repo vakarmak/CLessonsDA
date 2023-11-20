@@ -59,7 +59,32 @@ namespace CLessonsDA.Lesson5
             // Напишите программу, которая будет выполнять проверку чисел на четность. 
             // Предложите два варианта решения поставленной задачи. 
 
+            Console.WriteLine("Введите число:");
+            int number2 = int.Parse(Console.ReadLine());
 
+            // Первый вариант решения
+            if (number2 % 2 == 0)
+            {
+                Console.WriteLine("Число четное");
+            } else
+            {
+                Console.WriteLine("Число не четное");
+            }
+
+            // Второй вариант решения
+            static bool isEvenNumber (int n)
+            {
+                return (n > 0) && ((n & (n - 1)) == 0) && ((n & 1) == 0);
+            }
+
+            if (isEvenNumber(number2))
+            {
+                Console.WriteLine("Число четное");
+            } 
+            else
+            {
+                Console.WriteLine("Число не четное");
+            }
         }
 
         public static void Task4()
