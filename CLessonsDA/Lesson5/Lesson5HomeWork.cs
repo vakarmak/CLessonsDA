@@ -133,7 +133,7 @@ namespace CLessonsDA.Lesson5
             // Результаты расчета, выведите на экран. 
 
             Console.WriteLine("Укажите ваш рабочий стаж:");
-            int workAge = int.Parse(Console.ReadLine());
+            double workAge = double.Parse(Console.ReadLine());
 
             if (workAge > 0 && workAge < 5)
             {
@@ -155,11 +155,15 @@ namespace CLessonsDA.Lesson5
             {
                 Console.WriteLine("Ваша премия составляет 45% от заработной платы");
             }
-            else if (workAge > 25)
+            else if (workAge >= 25)
             {
                 Console.WriteLine("Ваша премия составляет 50% от заработной платы");
             }
-            Console.WriteLine("Вы либо не работаете либо пытаетесь проверить программу на работоспособность!");
+            else 
+            {
+                Console.WriteLine("Вы либо не работаете либо пытаетесь проверить программу на работоспособность!");
+            }
+            
         }
     }
 }
