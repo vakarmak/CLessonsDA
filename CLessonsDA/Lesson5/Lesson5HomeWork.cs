@@ -40,7 +40,14 @@ namespace CLessonsDA.Lesson5
             // Задание 2
             // Используя теорему Де Моргана, преобразуйте исходное выражение A | B, в эквивалентное выражение.
 
+            bool A = true;
+            bool B = false;
 
+            bool originalExpression = A | B;
+            Console.WriteLine($"Исходное выражение: A | B =  {originalExpression}");
+
+            bool equivalentExpression = !(A && B);
+            Console.WriteLine($"Эквивалентное выражение: !(A && B) = {equivalentExpression}");
         }
 
         public static void Task3()
