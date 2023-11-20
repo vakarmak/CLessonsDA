@@ -43,9 +43,11 @@ namespace CLessonsDA.Lesson5
             bool A = true;
             bool B = false;
 
+            // Исходное выражение из задания
             bool originalExpression = A | B;
             Console.WriteLine($"Исходное выражение: A | B =  {originalExpression}");
 
+            // Преобразование согласно теореме Де Моргана
             bool equivalentExpression = !(A && B);
             Console.WriteLine($"Эквивалентное выражение: !(A && B) = {equivalentExpression}");
         }
