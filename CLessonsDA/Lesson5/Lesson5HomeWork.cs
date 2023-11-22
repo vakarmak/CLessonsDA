@@ -155,9 +155,13 @@ namespace CLessonsDA.Lesson5
             {
                 Console.WriteLine("Ваша премия составляет 45% от заработной платы");
             }
-            else if (workAge >= 25)
+            else if (workAge >= 25 && workAge < 65)
             {
                 Console.WriteLine("Ваша премия составляет 50% от заработной платы");
+            }
+            else if (workAge >= 65 && workAge <= 100)
+            {
+                Console.WriteLine("Пора на пенсию!");
             }
             else 
             {
