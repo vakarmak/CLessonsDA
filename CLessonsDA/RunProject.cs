@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CLessonsDA
+﻿namespace CLessonsDA
 {
     internal class RunProject
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
@@ -27,7 +21,76 @@ namespace CLessonsDA
             //Lesson5.Lesson5HomeWork.Task2();
             //Lesson5.Lesson5HomeWork.Task3();
             //Lesson5.Lesson5HomeWork.Task4();
-            Lesson5.Lesson5HomeWork.Task5();
+            //Lesson5.Lesson5HomeWork.Task5();
+
+            //Lesson6.Lesson6HomeWork.Task1();
+            //Lesson6.Lesson6HomeWork.Task2();
+            Lesson6.Lesson6HomeWork.Task3();
+
+            RunProject.LecturePractice();
+        }
+
+        public static void LecturePractice()
+        {
+            //Label:
+            //    Console.WriteLine("Hello!");
+            //    goto Label;
+
+
+            //    int counter = 0;
+
+            //Label:
+            //    counter++;
+            //    Console.WriteLine("counter = {0}", counter);
+
+            //    if (counter < 3)
+            //    {
+            //        goto Label;
+            //    }
+            //    Console.WriteLine("end!");
+
+            //    const int maxAttempt = 5;
+            //    int attempt = 0;
+            //    string color = "red";
+
+            //    while (attempt < maxAttempt)
+            //    {
+            //        attempt++;
+            //        Console.WriteLine("Попытка {0}", attempt);
+
+            //        string value = Console.ReadLine();
+
+            //        if (value == "exit")
+            //        {
+            //            break;
+            //        }
+
+            //        if (value != color)
+            //        {
+            //            continue;
+            //        }
+
+            //        Console.WriteLine("Поздравляем, вы угадали c {0} попытки!", attempt);
+            //        break;
+            //    }
+            //    Console.WriteLine("Конец игры!");
+
+            //    int counter = 4;
+            //    int factorial = 1;
+
+            //    Console.Write("Факториал числа {0}! = ", counter);
+
+            //    do
+            //    {
+            //        factorial *= counter--;
+            //    }
+            //    while (counter > 0);
+            //    Console.WriteLine("{0}", factorial);
+
+            //for (; ; )
+            //{
+            //    Console.WriteLine("Hello!");
+            //}
         }
     }
 }
