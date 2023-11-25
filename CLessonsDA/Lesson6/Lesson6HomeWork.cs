@@ -39,14 +39,14 @@ namespace CLessonsDA.Lesson6
 
             Console.WriteLine("Введите количество клентов: ");
             int clientNumber = int.Parse(Console.ReadLine());
-            int possibleRoutes = 1;
+            int minimalPossibleRoutes = 1;
 
             do
             {
-                possibleRoutes *= clientNumber--;
+                minimalPossibleRoutes *= clientNumber--;
             }
             while (clientNumber > 0);
-            Console.WriteLine("Существует {0} возможных путей", possibleRoutes);
+            Console.WriteLine("Существует {0} возможных путей", minimalPossibleRoutes);
         }
     }
 }
