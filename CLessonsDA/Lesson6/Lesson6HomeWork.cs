@@ -68,6 +68,8 @@
             }
             Console.WriteLine();
             Console.WriteLine();
+
+
             Console.Write("Прямоугольный треугольник");
             Console.WriteLine();
             for (int rightTriangle = 0; rightTriangle < 10; rightTriangle++)
@@ -80,6 +82,30 @@
             }
             Console.WriteLine();
             Console.WriteLine();
+
+            
+            Console.WriteLine("Равносторонний треугольник");
+            Console.WriteLine();
+            int tSize = 5;
+
+            for (int line = 1; line <= tSize; line++)
+            {
+                for (int indentation = 0; indentation < tSize - line; indentation++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int indentation = 0; indentation < 2 * line - 1; indentation++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.Write("\n");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+
+
             Console.WriteLine("Ромб");
             Console.WriteLine();
 
