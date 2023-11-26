@@ -39,6 +39,7 @@ namespace CLessonsDA.Lesson6
 
             Console.WriteLine("Введите количество клентов: ");
             int clientNumber = int.Parse(Console.ReadLine());
+            Console.WriteLine("У компании {0} клиента", clientNumber);
             int minimalPossibleRoutes = 1;
 
             do
@@ -46,7 +47,7 @@ namespace CLessonsDA.Lesson6
                 minimalPossibleRoutes *= clientNumber--;
             }
             while (clientNumber > 0);
-            Console.WriteLine("Существует {0} возможных путей", minimalPossibleRoutes);
+            Console.WriteLine("Существует {0} возможных варианта доставки товара", minimalPossibleRoutes);
         }
     }
 }
