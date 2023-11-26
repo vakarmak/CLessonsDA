@@ -8,7 +8,41 @@
             // Дано два числа A и B (A < B) выведите суму всех чисел расположенных между данными числами на экран.
             // Дано два числа A и B (A < B) выведите все нечетные значения, расположенные между данными числами.
 
+            Console.WriteLine("Введите число А: ");
+            int a = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Введите число B: ");
+            int b = int.Parse(Console.ReadLine());
+
+            if (b <= a)
+            {
+                Console.WriteLine("Введите числа таким образом, чтобы В было больше А");
+                return;
+            }
+
+            // Первая часть задания
+
+            //int sum = 0;
+            //for (int i = a + 1; i < b; i++)
+            //{
+            //    sum += i;
+            //}
+
+            //Console.WriteLine($"Сумма чисел между {a} и {b} равна: {sum}");
+
+            // Вторая часть задания
+
+            Console.WriteLine($"Нечетные числа между {a} и {b}: ");
+
+            bool isFirst = true;
+            for (int i = a + 1; i < b; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    Console.Write(isFirst ? $"{i}" : $", {i}");
+                    isFirst = false;
+                }
+            }
         }
 
         public static void Task2()
