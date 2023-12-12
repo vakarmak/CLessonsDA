@@ -11,7 +11,82 @@
             // Требуется предоставить пользователю возможность вводить с клавиатуры значения операндов и знак арифметической операции,
             // для выполнения вычисления.
 
+            Console.WriteLine("Введите первое число: ");
+            int x = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Введите второе число: ");
+            int y = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Введите знак желаемой операции: ");
+            char sign = Console.ReadKey().KeyChar;
+            Console.WriteLine("\n");
+
+            switch (sign)
+            {
+
+                case '+':
+                    {
+                        int result = Add(x, y);
+
+                        Console.WriteLine("Сумма равна: {0}", result);
+                        break;
+                    }
+
+                case '-':
+                    {
+                        int result = Sub(x, y);
+
+                        Console.WriteLine("Разница равна: {0}", result);
+                        break;
+                    }
+
+                case '*':
+                    {
+                        int result = Mul(x, y);
+
+                        Console.WriteLine("Произведение равно: {0}", result);
+                        break;
+                    }
+
+                case '/':
+                    {
+                        string result = Div(x, y);
+
+                        Console.WriteLine("Частное равно: {0}", result);
+                        break;
+                    }
+
+                default:
+                    {
+                        Console.WriteLine("Неверный знак операции!");
+                        break;
+                    }
+            }
+
+            static int Add(int x, int y)
+            {
+                return x + y;
+            }
+
+            static int Sub(int x, int y)
+            {
+                return x - y;
+            }
+
+            static int Mul(int x, int y)
+            {
+                return (x * y);
+            }
+
+            static string Div(double x, double y)
+            {
+                if (y == 0)
+                {
+                    return "На ноль делить нельзя!";
+                }
+                    
+                return (x / y).ToString();
+            }
         }
 
         public static void Task2()
