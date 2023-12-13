@@ -27,8 +27,8 @@
             //Lesson6.Lesson6HomeWork.Task2();
             //Lesson6.Lesson6HomeWork.Task3();
 
-            Lesson7.Lesson7HomeWork.Task1();
-            //Lesson7.Lesson7HomeWork.Task2();
+            //Lesson7.Lesson7HomeWork.Task1();
+            Lesson7.Lesson7HomeWork.Task2();
             //Lesson7.Lesson7HomeWork.Task3();
 
             RunProject.LecturePractice();

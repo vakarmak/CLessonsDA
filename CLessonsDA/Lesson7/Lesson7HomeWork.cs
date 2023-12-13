@@ -97,7 +97,53 @@
             // курс для конвертации в другую валюту,
             // Организуйте вывод результата операции конвертирования валюты на экран.
 
+            Console.WriteLine("Обмен производится между такими валютами: USD, EUR, GBP, UAH.");
+            Console.WriteLine();
 
+            string currencyName1 = "";
+            while (true)
+            {
+                Console.WriteLine("Введите название валюты, которую хотите поменять:");
+                currencyName1 = Console.ReadLine().ToUpper();
+
+                if (currencyName1 == "USD" || currencyName1 == "EUR" || currencyName1 == "GBP" || currencyName1 == "UAH")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Неправильный ввод!");
+                }
+            }
+            
+            Console.WriteLine("Введите необходимое кол-во валюты в {0}:", currencyName1);
+            double currencyOneQuantity = double.Parse(Console.ReadLine());
+
+            string currencyName2 = "";
+            while (true)
+            {
+                Console.WriteLine("Введите название валюты, в которую хотите конвертировать {0}:", currencyName1);
+                currencyName2 = Console.ReadLine().ToUpper();
+                if (currencyName2 == "USD" || currencyName2 == "EUR" || currencyName2 == "GBP" || currencyName2 == "UAH")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Неправильный ввод!");
+                }
+            }
+
+            Console.WriteLine("Введите курс, по которому производится обмен {0} на {1}:", currencyName1, currencyName2);
+            double exchangeRate = double.Parse(Console.ReadLine());
+
+            static double ExchangeToUah(double currencyOneQuantity, double exchangeRate)
+            {
+                return currencyOneQuantity * exchangeRate; 
+            }
+
+            double result = ExchangeToUah(currencyOneQuantity, exchangeRate);
+            Console.WriteLine("При обмене {0} {1} на {2} выполучите {3} {2}", currencyOneQuantity, currencyName1, currencyName2, result);
         }
 
         public static void Task3()
