@@ -23,44 +23,43 @@
 
             switch (sign)
             {
-
                 case '+':
-                    {
-                        int result = Add(x, y);
+                {
+                    int result = Add(x, y);
 
-                        Console.WriteLine("Сумма равна: {0}", result);
-                        break;
-                    }
+                    Console.WriteLine("Сумма равна: {0}", result);
+                    break;
+                }
 
                 case '-':
-                    {
-                        int result = Sub(x, y);
+                {
+                    int result = Sub(x, y);
 
-                        Console.WriteLine("Разница равна: {0}", result);
-                        break;
-                    }
+                    Console.WriteLine("Разница равна: {0}", result);
+                    break;
+                }
 
                 case '*':
-                    {
-                        int result = Mul(x, y);
+                {
+                    int result = Mul(x, y);
 
-                        Console.WriteLine("Произведение равно: {0}", result);
-                        break;
-                    }
+                    Console.WriteLine("Произведение равно: {0}", result);
+                    break;
+                }
 
                 case '/':
-                    {
-                        string result = Div(x, y);
+                {
+                    string result = Div(x, y);
 
-                        Console.WriteLine("Частное равно: {0}", result);
-                        break;
-                    }
+                    Console.WriteLine("Частное равно: {0}", result);
+                    break;
+                }
 
                 default:
-                    {
-                        Console.WriteLine("Неверный знак операции!");
-                        break;
-                    }
+                {
+                    Console.WriteLine("Неверный знак операции!");
+                    break;
+                }
             }
 
             static int Add(int x, int y)
@@ -84,7 +83,7 @@
                 {
                     return "На ноль делить нельзя!";
                 }
-                    
+
                 return (x / y).ToString();
             }
         }
@@ -106,7 +105,8 @@
                 Console.WriteLine("Введите название валюты, которую хотите поменять:");
                 currencyName1 = Console.ReadLine().ToUpper();
 
-                if (currencyName1 == "USD" || currencyName1 == "EUR" || currencyName1 == "GBP" || currencyName1 == "UAH")
+                if (currencyName1 == "USD" || currencyName1 == "EUR" || currencyName1 == "GBP" ||
+                    currencyName1 == "UAH")
                 {
                     break;
                 }
@@ -115,7 +115,7 @@
                     Console.WriteLine("Неправильный ввод!");
                 }
             }
-            
+
             Console.WriteLine("Введите необходимое кол-во валюты в {0}:", currencyName1);
             double currencyOneQuantity = double.Parse(Console.ReadLine());
 
@@ -124,7 +124,8 @@
             {
                 Console.WriteLine("Введите название валюты, в которую хотите конвертировать {0}:", currencyName1);
                 currencyName2 = Console.ReadLine().ToUpper();
-                if (currencyName2 == "USD" || currencyName2 == "EUR" || currencyName2 == "GBP" || currencyName2 == "UAH")
+                if (currencyName2 == "USD" || currencyName2 == "EUR" || currencyName2 == "GBP" ||
+                    currencyName2 == "UAH")
                 {
                     break;
                 }
@@ -139,11 +140,12 @@
 
             static double ExchangeToUah(double currencyOneQuantity, double exchangeRate)
             {
-                return currencyOneQuantity * exchangeRate; 
+                return currencyOneQuantity * exchangeRate;
             }
 
             double result = ExchangeToUah(currencyOneQuantity, exchangeRate);
-            Console.WriteLine("При обмене {0} {1} на {2} выполучите {3} {2}", currencyOneQuantity, currencyName1, currencyName2, result);
+            Console.WriteLine("При обмене {0} {1} на {2} выполучите {3} {2}", currencyOneQuantity, currencyName1,
+                currencyName2, result);
         }
 
         public static void Task3()
@@ -154,8 +156,8 @@
             // Простое число - это натуральное число, которое делится на 1 и само на себя. Чтобы определить простое ли число следует найти все его целые делители.
             // Если делителей больше двух, значит оно не простое
             // 3) Делится ли на 2, 5, 3, 6, 9 без остатка
-
-
+            
+            
         }
     }
 }
