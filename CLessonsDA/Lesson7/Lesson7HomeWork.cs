@@ -157,11 +157,11 @@
             // Если делителей больше двух, значит оно не простое
             // 3) Делится ли на 2, 5, 3, 6, 9 без остатка
 
-            isPosOrNegMeth();
-            isPrimeOrComplexMeth();
-            isDivideNoRemainder();
+            IsPosOrNegMeth();
+            IsPrimeOrComplexMeth();
+            IsDivideNoRemainder();
 
-            static void isPosOrNegMeth()
+            static void IsPosOrNegMeth()
             {
                 Console.WriteLine("Метод для определения является ли введенное число положительным или отрицательным.");
                 Console.WriteLine("Введите число:");
@@ -183,7 +183,7 @@
                 }
             }
 
-            static void isPrimeOrComplexMeth()
+            static void IsPrimeOrComplexMeth()
             {
                 Console.WriteLine();
                 Console.WriteLine("Метод для определения является ли введенное число простым.");
@@ -218,7 +218,7 @@
                 }
             }
 
-            static void isDivideNoRemainder()
+            static void IsDivideNoRemainder()
             {
                 Console.WriteLine();
                 Console.WriteLine("Метод для определения делится ли число на 2, 5, 3, 6, 9 без остатка.");
