@@ -31,7 +31,7 @@
             //Lesson7.Lesson7HomeWork.Task2();
             //Lesson7.Lesson7HomeWork.Task3();
 
-            RunProject.LecturePractice();
+            LecturePractice();
         }
 
         public static void LecturePractice()
@@ -95,6 +95,8 @@
             //{
             //    Console.WriteLine("Hello!");
             //}
+            
+            
         }
     }
 }

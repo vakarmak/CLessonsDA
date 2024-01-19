@@ -190,7 +190,7 @@
                 Console.WriteLine("Введите число:");
                 int enteredNumber2 = int.Parse(Console.ReadLine());
 
-                if (isPrime(enteredNumber2))
+                if (IsPrime(enteredNumber2))
                 {
                     Console.WriteLine("Введенное число {0} простое!", enteredNumber2);
                 }
@@ -199,7 +199,7 @@
                     Console.WriteLine("Введенное число {0} не является простым!", enteredNumber2);
                 }
 
-                static bool isPrime(int enteredNumber2)
+                static bool IsPrime(int enteredNumber2)
                 {
                     if (enteredNumber2 <= 1)
                     {
@@ -225,7 +225,7 @@
                 Console.WriteLine("Введите число:");
                 int enteredNumber3 = int.Parse(Console.ReadLine());
 
-                if (isDivisibleByAll(enteredNumber3, 2, 5, 3, 6, 9))
+                if (IsDivisibleByAll(enteredNumber3, 2, 5, 3, 6, 9))
                 {
                     Console.WriteLine("Введенное число {0} делится на указанные числа без остатка.", enteredNumber3);
                 }
@@ -234,7 +234,7 @@
                     Console.WriteLine("Введенное число {0} не делится на указанные числа без остатка.", enteredNumber3);
                 }
 
-                static bool isDivisibleByAll(int enteredNumber3, params int[] divisors)
+                static bool IsDivisibleByAll(int enteredNumber3, params int[] divisors)
                 {
                     foreach (int divisor in divisors)
                     {
