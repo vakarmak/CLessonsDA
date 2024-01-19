@@ -187,7 +187,7 @@
             {
                 Console.WriteLine();
                 Console.WriteLine("Метод для определения является ли введенное число простым.");
-                Console.WriteLine("Введите число!");
+                Console.WriteLine("Введите число:");
                 int enteredNumber2 = int.Parse(Console.ReadLine());
 
                 if (isPrime(enteredNumber2))
@@ -222,7 +222,7 @@
             {
                 Console.WriteLine();
                 Console.WriteLine("Метод для определения делится ли число на 2, 5, 3, 6, 9 без остатка.");
-                Console.WriteLine("Введите число!");
+                Console.WriteLine("Введите число:");
                 int enteredNumber3 = int.Parse(Console.ReadLine());
 
                 if (isDivisibleByAll(enteredNumber3, 2, 5, 3, 6, 9))
