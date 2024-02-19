@@ -160,92 +160,92 @@
             IsPosOrNegMeth();
             IsPrimeOrComplexMeth();
             IsDivideNoRemainder();
+        }
 
-            static void IsPosOrNegMeth()
+        public static void IsPosOrNegMeth()
+        {
+            Console.WriteLine("Метод для определения является ли введенное число положительным или отрицательным.");
+            Console.WriteLine("Введите число:");
+            double enteredNumber = double.Parse(Console.ReadLine());
+
+            double isPosOrNeg = enteredNumber;
+
+            if (isPosOrNeg > 0)
             {
-                Console.WriteLine("Метод для определения является ли введенное число положительным или отрицательным.");
-                Console.WriteLine("Введите число:");
-                double enteredNumber = double.Parse(Console.ReadLine());
+                Console.WriteLine("Число положительное!");
+            }
+            else if (isPosOrNeg < 0)
+            {
+                Console.WriteLine("Число отрицательное!");
+            }
+            else
+            {
+                Console.WriteLine("0 не является ни положительным, ни отрицательным числом");
+            }
+        }
 
-                double isPosOrNeg = enteredNumber;
+        public static void IsPrimeOrComplexMeth()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Метод для определения является ли введенное число простым.");
+            Console.WriteLine("Введите число:");
+            int enteredNumber2 = int.Parse(Console.ReadLine());
 
-                if (isPosOrNeg > 0)
-                {
-                    Console.WriteLine("Число положительное!");
-                }
-                else if (isPosOrNeg < 0)
-                {
-                    Console.WriteLine("Число отрицательное!");
-                }
-                else
-                {
-                    Console.WriteLine("0 не является ни положительным, ни отрицательным числом");
-                }
+            if (IsPrime(enteredNumber2))
+            {
+                Console.WriteLine("Введенное число {0} простое!", enteredNumber2);
+            }
+            else
+            {
+                Console.WriteLine("Введенное число {0} не является простым!", enteredNumber2);
             }
 
-            static void IsPrimeOrComplexMeth()
+            static bool IsPrime(int enteredNumber2)
             {
-                Console.WriteLine();
-                Console.WriteLine("Метод для определения является ли введенное число простым.");
-                Console.WriteLine("Введите число:");
-                int enteredNumber2 = int.Parse(Console.ReadLine());
-
-                if (IsPrime(enteredNumber2))
+                if (enteredNumber2 <= 1)
                 {
-                    Console.WriteLine("Введенное число {0} простое!", enteredNumber2);
-                }
-                else
-                {
-                    Console.WriteLine("Введенное число {0} не является простым!", enteredNumber2);
+                    return false;
                 }
 
-                static bool IsPrime(int enteredNumber2)
+                for (int i = 2; i <= Math.Sqrt(enteredNumber2); i++)
                 {
-                    if (enteredNumber2 <= 1)
+                    if (enteredNumber2 % i == 0)
                     {
                         return false;
                     }
-
-                    for (int i = 2; i <= Math.Sqrt(enteredNumber2); i++)
-                    {
-                        if (enteredNumber2 % i == 0)
-                        {
-                            return false;
-                        }
-                    }
-
-                    return true;
                 }
+
+                return true;
+            }
+        }
+
+        public static void IsDivideNoRemainder()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Метод для определения делится ли число на 2, 5, 3, 6, 9 без остатка.");
+            Console.WriteLine("Введите число:");
+            int enteredNumber3 = int.Parse(Console.ReadLine());
+
+            if (IsDivisibleByAll(enteredNumber3, 2, 5, 3, 6, 9))
+            {
+                Console.WriteLine("Введенное число {0} делится на указанные числа без остатка.", enteredNumber3);
+            }
+            else
+            {
+                Console.WriteLine("Введенное число {0} не делится на указанные числа без остатка.", enteredNumber3);
             }
 
-            static void IsDivideNoRemainder()
+            static bool IsDivisibleByAll(int enteredNumber3, params int[] divisors)
             {
-                Console.WriteLine();
-                Console.WriteLine("Метод для определения делится ли число на 2, 5, 3, 6, 9 без остатка.");
-                Console.WriteLine("Введите число:");
-                int enteredNumber3 = int.Parse(Console.ReadLine());
-
-                if (IsDivisibleByAll(enteredNumber3, 2, 5, 3, 6, 9))
+                foreach (int divisor in divisors)
                 {
-                    Console.WriteLine("Введенное число {0} делится на указанные числа без остатка.", enteredNumber3);
-                }
-                else
-                {
-                    Console.WriteLine("Введенное число {0} не делится на указанные числа без остатка.", enteredNumber3);
-                }
-
-                static bool IsDivisibleByAll(int enteredNumber3, params int[] divisors)
-                {
-                    foreach (int divisor in divisors)
+                    if (enteredNumber3 % divisor != 0)
                     {
-                        if (enteredNumber3 % divisor != 0)
-                        {
-                            return false;
-                        }
+                        return false;
                     }
-
-                    return true;
                 }
+
+                return true;
             }
         }
     }
