@@ -1,4 +1,7 @@
-﻿namespace CLessonsDA
+﻿using CLessonsDA.NotesDuringLessons;
+using CLessonsDA.NotesDuringLessons.Lesson8;
+
+namespace CLessonsDA
 {
     internal class RunProject
     {
@@ -29,13 +32,29 @@
 
             //Lesson7.Lesson7HomeWork.Task1();
             //Lesson7.Lesson7HomeWork.Task2();
-            //Lesson7.Lesson7HomeWork.Task3();
+            Lesson7.Lesson7HomeWork.Task3();
             
-            Lesson8.Lesson8HomeWork.Task1();
+            // Lesson8.Lesson8HomeWork.Task1();
             // Lesson8.Lesson8HomeWork.Task2();
             // Lesson8.Lesson8HomeWork.Task3();
+            
+            // ------------------------------ Lecture notes ----------------------------------
 
             LecturePractice();
+            
+            // Лекция 8
+            
+            // OverloadMethods.Function();
+            // OverloadMethods.Function("A");
+            // OverloadMethods.Function(2);
+            // OverloadMethods.Function(2.5);
+            // OverloadMethods.Function("Maks ", 1);
+            // OverloadMethods.Function(2, " 1");
+
+            // Recursion.SimpleRecursionMeth(50);
+            // Recursion.ComplexRecursionMethCall(5);
+            
+            Converter.ConvertMeth(12);
         }
 
         public static void LecturePractice()
@@ -99,8 +118,6 @@
             //{
             //    Console.WriteLine("Hello!");
             //}
-            
-            
         }
     }
 }
