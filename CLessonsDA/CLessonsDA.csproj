@@ -13,4 +13,16 @@
     <Folder Include="HomeWorks\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove=".idea\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove=".idea\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".idea\**" />
+  </ItemGroup>
+
 </Project>
