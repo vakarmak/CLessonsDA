@@ -25,4 +25,8 @@
     <None Remove=".gitignore" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="HomeWorks\Lesson8\" />
+  </ItemGroup>
+
 </Project>
