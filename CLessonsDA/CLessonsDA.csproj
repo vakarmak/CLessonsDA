@@ -15,14 +15,17 @@
 
   <ItemGroup>
     <Compile Remove=".idea\**" />
+    <Compile Remove="obj\**" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove=".idea\**" />
+    <EmbeddedResource Remove="obj\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove=".idea\**" />
+    <None Remove="obj\**" />
   </ItemGroup>
 
 </Project>
