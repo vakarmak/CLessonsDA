@@ -1,4 +1,5 @@
-﻿using CLessonsDA.NotesDuringLessons;
+﻿using CLessonsDA.HomeWorks.Lesson8;
+using CLessonsDA.NotesDuringLessons;
 using CLessonsDA.NotesDuringLessons.Lesson8;
 
 namespace CLessonsDA
@@ -33,6 +34,8 @@ namespace CLessonsDA
             //Lesson7.Lesson7HomeWork.Task1();
             //Lesson7.Lesson7HomeWork.Task2();
             // Lesson7.Lesson7HomeWork.Task3();
+
+            Lesson8HomeWorkTask1.CreditCheck();
 
             // ------------------------------ Lecture notes ----------------------------------
 
