@@ -10,10 +10,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
 
   <ItemGroup>
-    <Folder Include="HomeWorks\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove=".idea\**" />
     <Compile Remove="obj\**" />
   </ItemGroup>
