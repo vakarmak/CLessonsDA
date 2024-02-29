@@ -33,11 +33,7 @@ namespace CLessonsDA
             //Lesson7.Lesson7HomeWork.Task1();
             //Lesson7.Lesson7HomeWork.Task2();
             // Lesson7.Lesson7HomeWork.Task3();
-            
-            Lesson8.Lesson8HomeWork.Task1();
-            // Lesson8.Lesson8HomeWork.Task2();
-            // Lesson8.Lesson8HomeWork.Task3();
-            
+
             // ------------------------------ Lecture notes ----------------------------------
 
             LecturePractice();
