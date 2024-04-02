@@ -53,7 +53,7 @@ namespace CLessonsDA
             // Recursion.SimpleRecursionMeth(50);
             // Recursion.ComplexRecursionMethCall(5);
             
-            Converter.ConvertMeth(12);
+            // Converter.ConvertMeth(12);
         }
 
         public static void LecturePractice()
